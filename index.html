@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./Navbar&footer/footer.css">
+    <link rel="stylesheet" href="Navbar&footer/navbar.css">
+    <link rel="stylesheet" href="./bottomlandingpage/style.css">
+    <script src="https://kit.fontawesome.com/d95bd781b4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="navbar">
+        <div>
+            <div><img src="https://www.pluralsight.com/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/global/header/PS_logo.png" alt="pluralsightlogo"></div>
+            <div id="platform">Platform <i class="fa fa-angle-down" aria-hidden="true"></i></div>
+            <div id="products">Products <i class="fa fa-angle-down" aria-hidden="true"></i></div>
+            <div id="resources">Resourses <i class="fa fa-angle-down" aria-hidden="true"></i></div>
+            <div>For Individuals</div>
+        </div>
+        <div>
+            <div><i class="fas fa-search"></i></div>
+            <div id="signin">SigIn <i class="fa fa-angle-down" aria-hidden="true"></i></div>
+            <div onclick="displaytryforfreefromhomepage()">TRY FOR FREE</div>
+        </div>
+    </div>
+    <div id="platformBackground">
+        <div id="cross1"><i onclick="crossFn()" class="fa-solid fa-xmark"></i></div>
+        <div id="platformdiv">
+            <div>
+                <div>
+                    <h6>WAYS TO UPSKILL</h6>
+                    <div>
+                        <div>
+                            <div><img src="https://www.pluralsight.com/content/dam/pluralsight2/experiment-fragment/navigation/dashboard.png" alt="Courseslogo"></div>
+                            <div><a href="./Courses/courses.html"><h5>Courses</h5></a></div>
+                        </div>
+                        <div>
+                            <div><img src="https://www.pluralsight.com/content/dam/pluralsight2/experiment-fragment/navigation/iq.png" alt="Skillassessmentslogo"></div>
+                            <div><h5>Skill assessments</h5></div>
+                        </div>
+                        <div>
+                            <div><img src="https://www.pluralsight.com/content/dam/pluralsight2/experiment-fragment/navigation/cloud.png" alt="Labslogo"></div>
+                            <div><h5>Labs</h5></div>
+                            <div id="new">NEW</div>
+                        </div>
+                        <div>
+                            <div><img src="https://www.pluralsight.com/content/dam/pluralsight2/experiment-fragment/navigation/hand.png" alt="Handsonlearninglogo"></div>
+                            <div><h5>Hands-on learning</h5></div>
+                        </div>
+                        <div>
+                            <div><img src="https://www.pluralsight.com/content/dam/pluralsight2/experiment-fragment/navigation/certifications.png" alt=""></div>
+                            <div><h5>Certification prep</h5></div>
+                        </div>
+                        <div>
+                            <div><img src="https://www.pluralsight.com/content/dam/pluralsight2/experiment-fragment/navigation/analytics.png" alt=""></div>
+                            <div><h5>Team efficiency</h5></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h6>SKILLS FOR</h6>
+                    <div><h5>Software development</h5></div>
+                    <div><h5>IT ops</h5></div>
+                    <div><h5>Info & cyber security</h5></div>
+                    <div><h5>Cloud computing</h5></div>
+                    <div><h5>Machine learning / AI</h5></div>
+                    <div><h5>Data professional</h5></div>
+                    <div><h5>See our entire course library</h5></div>
+                </div>
+            </div>
+            <div>
+                <h6>TOP TRENDING PATHS</h6>
+                <div>
+                    <div>
+                        <div><img src="https://pluralsight2.imgix.net/paths/images/group-policy-administration-ee0dacafe8.png?w=75" alt="Microsoftlogo"></div>
+                        <div><p>Microsoft Azure Deployment</p></div>
+                    </div>
+                    <div>
+                        <div><img src="https://pluralsight2.imgix.net/paths/images/aws-certified-devops-engineer-25d912e3da.png?w=75" alt="awslogo"></div>
+                        <div><p>AWS Operations</p></div>
+                    </div>
+                    <div>
+                        <div><img src="https://pluralsight2.imgix.net/paths/images/r-programming-eb2e267a97.png?w=75" alt="cleaningdatalogo"></div>
+                        <div><p>Cleaning Data with R</p></div>
+                    </div>
+                    <div>
+                        <div><img src="https://pluralsight2.imgix.net/paths/images/python-7be70baaac.png?w=75" alt="corepythonlogo"></div>
+                        <div><p>Core Python</p></div>
+                    </div>
+                    <div>
+                        <div><img src="https://pluralsight2.imgix.net/paths/images/ruby-7e88ddd5f0.png?w=75" alt="Rubylogo"></div>
+                        <div><p>Ruby Language Fundamentals</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="productsBackground">
+        <div id="cross2"><i onclick="crossFn()" class="fa-solid fa-xmark"></i></div>
+        <div id="productsdiv">
+            <div onclick="displayskills()">
+                <div>
+                    <div><img src="https://www.pluralsight.com/content/dam/pluralsight2/experiment-fragment/navigation/Skill_logo_white.png" alt="skillslogo"></div>
+                    <div><p>Build tech skills to drive results</p></div>
+                </div>
+                <div>
+                    <div><h5>What is Skills?</h5></div>
+                    <div><h5>View plans</h5></div>
+                </div>
+            </div>
+            <div onclick="displayflow()">
+                <div>
+                    <div><img src="https://www.pluralsight.com/content/dam/pluralsight2/experiment-fragment/navigation/Flow_Logo_white.png" alt="flowlogo"></div>
+                    <div><p>Get insights into your workflow</p></div>
+                </div>
+                <div>
+                    <div><h5>What is Flow?</h5></div>
+                    <div><h5>View plans</h5></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="resourcesBackground">
+        <div id="cross3"><i onclick="crossFn()" class="fa-solid fa-xmark"></i></div>
+        <div id="resourcesdiv">
+            <div>
+                <div><h6>LEARN</h6></div>
+                <div><h5>Blog</h5></div>
+                <div><h5>Customer stories</h5></div>
+                <div><h5>Resource center</h5></div>
+                <div><h5>Guides</h5></div>
+                <div><h5>App download</h5></div>
+                <div><h5>Support</h5></div>
+            </div>
+            <div>
+                <div><h6>CONNECT</h6></div>
+                <div><h5>Events</h5></div>
+                <div><h5>Webinars</h5></div>
+                <div><h5>Podcast</h5></div>
+                <div><h6>PODCASTS</h6></div>
+                <div><h5>All Hands on Tech/h5></div>
+                <div><h5>Perspectives in Leadership</h5></div>
+            </div>
+        </div>
+    </div>
+    <div id="signinBackground">
+        <div id="cross"><i onclick="crossFn()" class="fa-solid fa-xmark"></i></div>
+        <div id="signindiv">
+            <div onclick="displaysigninPage()">
+                <div><h6>SIGN IN WITH</h6></div>
+                <div>
+                    <div><img src="https://www.pluralsight.com/content/dam/pluralsight2/experiment-fragment/navigation/Skill_logo_white.png" alt="skilllogo"></div>
+                    <div><span class="arrow1"> ></span></div>
+                </div>
+            </div>
+            <div onclick="displaysigninPage()">
+                <div><h6>SIGN IN WITH</h6></div>
+                <div>
+                    <div><img src="https://www.pluralsight.com/content/dam/pluralsight2/experiment-fragment/navigation/Flow_Logo_white.png" alt="flowlogo"></div>
+                    <div><span class="arrow1"> ></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="buildBetter">
+            <h1>Build Better Skills</h1>
+            <p>Face the future with confidence—and with the skills and tools to thrive.</p>
+            <div id="button">
+                <div><button id="viewPlans" onclick="displayviewplans()">VIEW PLANS</button></div>
+                <div><button id="tryForFree" onclick="displaytryforfreefromhome()">TRY FOR FREE</button></div>
+            </div>
+            <div><h6>HELPING THOUSANDS OF ORGANIZATIONS BUILD TECH SKILLS AT SCALE.</h6></div>
+            <div id="companyLogo">
+                <div><img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/2022/adp.png" alt="apd"></div>
+                <div><img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/2022/adobe.png" alt="adobe"></div>
+                <div><img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/2022/vmware.png" alt="vmware"></div>
+                <div><img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/2022/fujitsu.png" alt="fujitsu"></div>
+                <div><img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/2022/nasdaq.png" alt="nasdaq"></div>
+            </div>
+        </div>
+        <div id="colouredLine">
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div id="popular_topics">
+            <div><h6>TRENDING TECHNOLOGIES</h6></div>
+            <div><h3>Popular topics to learn now</h3></div>
+            <div>
+                <div>
+                    <div>
+                        <div><h6>PATH</h6></div>
+                        <div><h3>JavaScript</h3></div>
+                        <div><p>11 <span class="courses">Courses</span></p></div>
+                        <div><p>Take a look <span class="arrow"> ></span></p></div>
+                    </div>
+                    <div>
+                        <img class="logo" src="https://pluralsight2.imgix.net/paths/images/javascript-542e10ea6e.png" alt="jslogo">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div><h6>PATH</h6></div>
+                        <div><h3>Angular</h3></div>
+                        <div><p>14 <span class="courses">Courses</span></p></div>
+                        <div><p>Take a look <span class="arrow"> ></span></p></div>
+                    </div>
+                    <div>
+                        <img class="logo" src="https://pluralsight.imgix.net/paths/path-icons/angular-14a0f6532f.png" alt="angularlogo">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div><h6>PATH</h6></div>
+                        <div><h3>Core Python</h3></div>
+                        <div><p> 12 <span class="courses">Courses</span></p></div>
+                        <div><p>Take a look <span class="arrow"> ></span></p></div>
+                    </div>
+                    <div>
+                        <img class="logo" src="https://pluralsight.imgix.net/paths/python-7be70baaac.png" alt="pythonlogo">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div><h6>PATH</h6></div>
+                        <div><h3>C#</h3></div>
+                        <div><p>19 <span class="courses">Courses</span></p></div>
+                        <div><p>Take a look <span class="arrow"> ></span></p></div>
+                    </div>
+                    <div>
+                        <img class="logo" src="https://pluralsight.imgix.net/paths/path-icons/csharp-e7b8fcd4ce.png?" alt="C#logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="parent">
+        <h4>SEE WHAT'S NEW</h4>
+        <h1>Our latest features</h1>
+    </div>
+    <div id="child1">
+        <div class="div1">
+            <img src="./bottomlandingpage/images/skilllogo-1.png" alt="skill_logo" >
+            <h1>Deepen your people's expertise with hands-on labs</h1>
+            <p>Improve your team's confidence in their ability to deliver on business objectives by building the right skills that meet your org’s needs. 
+            Pluralsight offers 950+ labs that enable hands-on practice in secure environments across domains such as cloud (AWS, GCP and Azure), IT Ops, 
+            security, data and software development.</p>
+            <a href="./Product_Skills_Lpage/Product_Skills_LPage.html">Learn more ></a>   
+        </div>
+        <div>
+            <img src="./bottomlandingpage/images/Cloudlabs-1.png" alt="Cloudlabs-1-img" class="img1">
+        </div>
+        <div class="div1">
+            <img src="./bottomlandingpage/images/flowlogo-1.png" alt="flow_logo">
+            <h1>Unlock your people and upgrade your process like never before</h1>
+            <p>Pluralsight Flow's newest insights show you the what, how, and why of your team's dynamics and delivery.</p>
+            <p>The result? Healthier and more efficient engineering teams.</p>
+            <a href="./Products_Flow_Page/flowLanding_Page.html">Learn more ></a>
+        </div>
+        <div>
+            <img src="./bottomlandingpage/images/flowinterface -1.png" alt="flowinterface-1img" class="img1">
+        </div>
+    </div>
+    <div id="child2">
+        <div>
+            <img src="./bottomlandingpage/images/certification-preplogo.png" alt="certification-preplogo">
+            <h1>Empower your teams to grow their skills and their careers</h1>
+            <p>Prepare your team for certification exams with our expert authored content and practice exams.</p>
+            <a href="#">Learn more ></a>
+        </div>
+        <div>
+            <img src="./bottomlandingpage/images/delivery-modulelogo.png" alt="delivery-module">
+            <h1>Make lasting workflow improvements with insights from your Jira data</h1>
+            <p>Go beyond Jira data and get visibility into what’s happening within your user stories, tasks and bugs. Flow’s delivery module helps you better understand how your team is working and can make lasting improvements to your workflow.</p>
+            <a href="#">Learn more ></a>
+        </div>
+        <div>
+            <img src="./bottomlandingpage/images/sandboxes.png" alt="sandboxes">
+            <h1>Utilize a space for unrestricted exploration</h1>
+            <p>Sandboxes gives your team a safe environment to practice what they're learning from expert-authored courses.</p>
+            <a href="#">Learn more ></a>
+        </div>
+    </div>
+    <!--ENDED THE SECTION-->
+
+    <!--NEW SECTION START-->
+    <div id="parent2">
+        <div id="child3"> 
+            <h4>KEEP UP TO DATE</h4>
+            <h1>Discover more about Pluralsight</h1>
+        </div>
+        <div id="child4">
+            <div>
+                <a href="#"><img src="./bottomlandingpage/images/lookuptodate-4.jpg"></a>
+                <h4>WHAT IS PLURALSIGHT SKILLS?</h4>
+                <p>Discover the fastest, most effective path to developing technology skills</p>
+            </div>
+            <div>
+                <a href="./homepageconnections/card-1.html"><img src="./bottomlandingpage/images/keepuptodate-3.png"></a>
+                <h4>PLURALSIGHT NAMED A LEADER FOR IT TRAINING</h4>
+                <p>We're honored to be recognized in the 2021 IDC MarketScape for IT training.</p>
+            </div>
+            <div>
+                <a href="./homepageconnections/connections-2/card-2.html"><img src="./bottomlandingpage/images/keeuptodate-2.png"></a>
+                <h4>LEARN HOW TO DE-FRICTION YOUR SOFTWARE DEVELOPMENT WORKFLOW WITH FLOW</h4>
+                <p>Take a guided tour through Pluralsight Flow to see how visibility can take your team to the next level</p>
+            </div>
+            <div>
+                <a href="#"><img src="./bottomlandingpage/images/keepuptodate-1.png"></a>
+                <h4>CREATE YOUR FREE ACCOUNT</h4>
+                <p>Build new tech skills on us with free access to 50+ expert-led courses, assessments and more.</p>
+            </div>
+        </div>
+    </div>
+    <!--ENDED THE SECTION-->
+
+
+    <!--NEW SECTION STARTS-->
+    <div id="parent3">
+        <div></div>
+        <div>
+            <img src="./bottomlandingpage/images/vmwareimg-1.png" alt="vmwarelogo">
+            <h1>Winning the talent war with a scalable tech skills platform</h1>
+            <p>Evolving a 20-year-old company, increasing innovation and accelerating time to delivery requires fresh skills. See how VMware’s 
+            globally dispersed teams use Pluralsight to leverage the latest developments in technology as they find new ways to serve customers.</p>
+            <button>HOW THEY'RE SKILLING UP</button>
+        </div>
+    </div>
+    <!--END THE SECTION-->
+
+    <!--NEW SECTION STARTS-->
+    <div id="parent4">
+        <div id="child5">
+            <h4>FOLLOW US</h4>
+            <h1>Share your skills</h1>
+        </div>
+        <div id="sub-child1">
+            <div>
+                <div class="grand-child1">
+                    <div class="gg-child1">
+                        <div>
+                            <a href="#"><img src="./bottomlandingpage/images/martin-img.jpg" alt="martin-img"></a>
+                        </div>
+                            <div>
+                                <div>
+                                    <a href="#"><h5>Martin Therkelsen</h5></a>
+                                    <div>
+                                        <!-- <a href="#">@Mracket</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="#"><img src="./bottomlandingpage/images/twitter-logo-1.png" alt="twitterlogo"></a>
+                        </div>
+                    </div>  
+            
+                    <p>Yesterday I passed the AZ-104 exam.<span>@pluralsight</span> courses are great to help prepare for these exams.<span>#citrixctp #azure</span></p>
+
+                    <div class="grand-child2">
+                        <a href="#" id="imgset1"><img src="./bottomlandingpage/images/tweet-retweet.jpeg" alt="likeretweetlogo" ></a>
+                    </div>
+
+                </div>
+                <div>
+                    <div class="grand-child1">
+                        <div class="gg-child1">
+                            <div>
+                                <a href="#"><img src="./bottomlandingpage/images/Willam.jpg" alt="martin-img"></a>
+                            </div>
+                            <div>
+                                <div>
+                                    <a href="#"><h5>William Masci</h5></a>
+                                    <div>
+                                        <!-- <a href="#">@billver3</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="#"><img src="./bottomlandingpage/images/twitter-logo-1.png" alt="twitterlogo"></a>
+                        </div>
+                    </div>  
+                    <p>Just passed the <span>#Cisco</span> DEVASC 200-901 exam! Tough exam, but it was a great experience. 
+                    I'm excited to be part of the <span>#DevNet</span> Class of 2020!
+                    Also big thanks to <span>@nickrusso42518</span> for his amazing study plan and <span>@pluralsight</span> course.
+                    I highly recommend it if you're studying for DEVASC</p>
+                    <div class="grand-child2">
+                        <a href="#" id="imgset2"><img src="./bottomlandingpage/images/tweet-retweet.jpeg" alt="likeretweetlogo"></a>
+                    </div>
+        
+                </div>
+                <div>
+                    <div class="grand-child1">
+                        <div class="gg-child1">
+                            <div>
+                                <a href="#"><img src="./bottomlandingpage/images/judy.jpg" alt="martin-img"></a>
+                            </div>
+                            <div>
+                                <div>
+                                    <a href="#"><h5>Judy</h5></a>
+                                    <div>
+                                        <!-- <a href="#">@judy_seyram</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div>
+                        <a href="#"><img src="./bottomlandingpage/images/twitter-logo-1.png" alt="twitterlogo"></a>
+                    </div>
+                </div>  
+                
+                <p>The best thing that happened to me in 2020 was
+                    <span>#GADS2020</span> which introduced me to <span>@pluralsight</span>. My interest in IT and programming peaked when i 
+                    joined the program and now i believe this is the career path i want to take. <span>#womenintech #WomenWhoCode
+                    #Andela #Pluralsight #GADS https://t.co/oYchljóV5W</span></p>
+
+                <div class="grand-child2">
+                    <a href="#"><img src="./bottomlandingpage/images/tweet-retweet.jpeg" alt="likeretweetlogo"></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--ENDED THE SECTION-->
+
+
+    <!--NEW SECTION START-->
+    <div id="parent5">
+        <div>
+        <img src="./bottomlandingpage/images/pluralpluseimg-1.png" alt="pluralpluseimg-1">
+        <h1>See our growth,
+            progress and evolution</h1>
+        <p>At Pluralsight, we see first-hand every day how technology makes the impossible, possible.
+            It’s why Pluralsight One exists: To advance our mission of democratizing technology skills,
+            challenging assumptions about solutions and create significant, lasting social impact.</p>
+            <button>FOR NONPROFITS</button>
+            </div>
+    </div>
+
+
+
+
+    <!-- new section starts-->
+    <div id="parent6">
+        <div id="child6">
+            <div>
+                <h1>Insights that give you an edge</h1>
+            </div>
+            <div>
+                <div>
+                <button onclick="displaytryforfreefromhome()">TRY FOR FREE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footerBackground">
+        <div>
+            <div id="footer">
+                <div>
+                    <h5>SOLUTIONS</h5>
+                    <p>Pluralsight Skills</p>
+                    <p>Pluralsight Flow</p>
+                    <p>Government</p>
+                    <p>Gift of Pluralsight</p>
+                    <p>View Pricing</p>
+                    <p>Contact Sales</p>
+                    <p>Skill up for free</p>
+                </div>
+                <div>
+                    <h5>PLATFORM</h5>
+                    <p>Browse library</p>
+                    <p>Role IQ</p>
+                    <p>Skill IQ</p>
+                    <p>Iris</p>
+                    <p>Authors</p>
+                    <p>Professional Services</p>
+                </div>
+                <div>
+                    <h5>COMPANY</h5>
+                    <p>About us</p>
+                    <p>Customer stories</p>
+                    <p>Careers</p>
+                    <p>Blog</p>
+                    <p>Newsroom</p>
+                    <p>Resource center</p>
+                    <p>Guides</p>
+                </div>
+                <div>
+                    <h5>RESOURCES</h5>
+                    <p>Download Pluralsight</p>
+                    <p>Events</p>
+                    <p>Teach</p>
+                    <p>Partners</p>
+                    <p>Affiliate Partners</p>
+                    <p>PluralsightOne.org</p>
+                    <p>Subscribe</p>
+                </div>
+                <div>
+                    <h5>SUPPORT</h5>
+                    <p>Contact</p>
+                    <p>Help center</p>
+                    <p>IP allowlist</p>
+                    <p>Sitemap</p>
+                </div>
+            </div>
+            <div><hr></div>
+            <div>
+                <div><img src="https://www.pluralsight.com/content/dam/pluralsight2/icons/globe-white.png" alt=""></div>
+                <div><p>Deutsch</p></div>
+                <div><p>English</p></div>
+                <div><p>French</p></div>
+            </div>
+            <div><hr></div>
+            <div id="lastPart">
+                <div>
+                    <div><img src="https://www.pluralsight.com/content/dam/pluralsight2/general/icons/light/ps-icon.png" alt="pluralsightlogo"></div>
+                    <div><p>Copyright © 2004 - 2022 Pluralsight LLC. All rights reserved.</p></div>
+                </div>
+                <div>
+                    <div><p>Terms of Use</p></div>
+                    <div><p>Privacy Notice</p></div>
+                    <div><p>Modern Slavery Act Transparency Statement</p></div>
+                </div>
+                <div>
+                    <div><img src="https://www.pluralsight.com/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/icons/desktop/Facebook_Icon.svg" alt="facebooklogo"></div>
+                    <div><img src="https://www.pluralsight.com/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/icons/desktop/Instagram_Icon.svg" alt="instalogo"></div>
+                    <div><img src="https://www.pluralsight.com/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/icons/desktop/Twitter_Icon.svg" alt="twitterlogo"></div>
+                    <div><img src="https://www.pluralsight.com/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/icons/desktop/LinkedIn_Icon.svg" alt="linkedinlogo"></div>
+                    <div><img src="https://www.pluralsight.com/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/icons/desktop/YouTube_Icon.svg" alt="youtubelogo"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="./index.js"></script>
